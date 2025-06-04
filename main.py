@@ -1,17 +1,5 @@
 import flet as ft
 
-# Nome dos ícones dentro do direório `/assets/icons`
-# icon-192.png, icon-512.png - Ícones para o Windows.
-# icon-maskable-192.png, icon-maskable-512.png - Ícones para o Android.
-# apple-touch-icon-192.png - Ícones para o iOS.
-# loading-animation.png - Ícone para a splash screen (tela inicial de carregamento)
-
-# Arquivos dentro de `assets`
-# favicon.png - Ícone usado nos navegadores
-# manifest.json - Arquivo com as configurações do PWA
-
-
-# Exemplo de código para teste
 def main(page: ft.Page):
     page.title = "Contador"
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
@@ -37,6 +25,5 @@ def main(page: ft.Page):
         ),
     )
 
-
 if __name__ == '__main__':
-    ft.app(target=main, assets_dir='assets')
+    ft.app(target=main, view=ft.WEB_BROWSER, assets_dir="assets")
